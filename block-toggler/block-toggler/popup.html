@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru"><head><meta charset="UTF-8">
+<style>
+body{width:320px;margin:0;padding:12px;background:#0b0f1a;color:#e2e8f0;font:13px system-ui,sans-serif}
+h1{font-size:14px;margin:0 0 2px;color:#22d3ee}
+#host{color:#94a3b8;font-size:12px;margin-bottom:10px;word-break:break-all}
+button{cursor:pointer;border:1px solid #243255;background:#111a30;color:#e2e8f0;border-radius:8px;padding:7px 10px;font-size:13px}
+button:hover{border-color:#22d3ee}
+#pick{width:100%;margin-bottom:10px;border-color:#22d3ee}
+label.row{display:flex;align-items:center;gap:8px;padding:5px 0}
+.sec{margin:10px 0 4px;color:#94a3b8;font-size:11px;text-transform:uppercase;letter-spacing:.08em}
+.blk{display:flex;align-items:center;gap:8px;padding:4px 0;border-bottom:1px solid #1b2745}
+.blk span{flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.blk button{padding:2px 8px;border-color:#f43f5e;color:#f43f5e}
+#msg{color:#f43f5e;margin-top:8px}
+</style></head><body>
+<h1>Блоки сайта</h1><div id="host"></div>
+<button id="pick">Выбрать блок на странице</button>
+<label class="row"><input type="checkbox" id="css"> Отключить CSS сайта</label>
+<label class="row"><input type="checkbox" id="img"> Скрыть картинки и видео</label>
+<div class="sec">Блоки (галочка — блок отсоединён)</div>
+<div id="list"></div>
+<button id="reset" style="margin-top:10px;width:100%">Сбросить всё для этого сайта</button>
+<div id="msg"></div>
+<script src="popup.js"></script></body></html>
